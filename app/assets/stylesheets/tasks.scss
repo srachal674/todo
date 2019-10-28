@@ -35,7 +35,7 @@ body {
 
 button,
 input[type="checkbox"] {
-  outline: none;
+  outline: black;
 }
 
 .hidden {
@@ -224,7 +224,7 @@ label[for='toggle-all'] {
 }
 
 .todo-list li .destroy:hover {
-  color: #af5b5e;
+  color: #130154;
 }
 
 .todo-list li .destroy:after {
@@ -353,6 +353,7 @@ html .clear-completed:active {
 
   .todo-list li .toggle {
     height: 40px;
+    color: navy;
   }
 
   .toggle-all {
