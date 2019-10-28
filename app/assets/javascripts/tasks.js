@@ -30,13 +30,7 @@ $(function() {
       task: {
         done: doneValue
       }
-    }).success(function(data) {
-      var liHtml = taskHtml(data);
-      var $li = $("#listItem-" + data.id);
-      $li.replaceWith(liHtml);
-      $('.toggle').change(toggleTask);
-
-    } );
+    });
   }
 
   $.get("/tasks").success( function( data ) {
@@ -66,7 +60,6 @@ $(function() {
       var ulTodos = $('.todo-list');
       ulTodos.append(htmlString);
       $('.toggle').click(toggleTask);
-      $('.new-todo').val('');
     });
   });
 
